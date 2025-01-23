@@ -1,10 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
 <head>
-  <meta charset="UTF-8">
-  <title>Test</title>
+  <base href="https://slopemapper.github.io/">
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link href="css/404.css" rel="stylesheet" />
+  <title>Download Slopemapper</title>
+  <script>
+    // Remove query parameters without reloading
+    if (window.location.search) {
+      window.history.replaceState({}, '', window.location.pathname);
+    }
+  </script>
 </head>
-<body>
+
+<body class="max-h-screen bg-black dark:text-white font-opensans border-gray-600 flex flex-col min-h-screen">
+
+<!--Hero-->
+<section id="hero" class="bg-gradient-to-b from-blue-900 pt-10">
+  <!--  // Main container-->
+  <div class="container mx-auto flex flex-row justify-center">
+    <div class="flex md:flex-row sm:flex-col items-center md:space-x-32 sm:space-y-32 mt-10">
+      <div class="flex flex-col items-center text-white space-y-8">
+        <h3 class="text-5xl font-bold">Download Slopemapper</h3>
+        <p class="max-w-lg text-3xl">Find piste routes in Les 3 Vallees</p>
+        <img src="/images/download_white.svg" alt="Download" class="mx-auto h-48 w-48">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="flex-grow">
+  <div class="flex flex-col mx-auto max-w-6xl justify-center items-center bg-black">
+    <div class="flex space-x-10 items-center justify-center md:w-1/3 mt-10 mb-10 px-10">
+      <div>
+        <img class="sm:min-w-64" src="/images/example1.png" alt="">
+      </div>
+      <div>
+        <img class="sm:min-w-64" src="/images/example2large.png" alt="">
+      </div>
+      <div>
+        <img class="sm:min-w-64" src="/images/example3.png" alt="">
+      </div>
+    </div>
+
+    <div class="text-center px-4 text-darkBlue  min-w-[320px]">
+    </div>
+  </div>
+</div>
+
+<section id="footer" class="bg-black p-20">
+  <div class="container max-w-5xl mx-auto">
+
+    <div class="flex flex-col space-y-8 text-white">
+      <p class="text-lg">Reach out to us at <b>slopemapperapp@gmail.com</b></p>
+
+      <div class="flex flex-row space-x-6 items-center">
+        <div class="h-24 w-24 bg-no-repeat">
+          <img src="images/logo.png" alt="Slopemapper Logo">
+        </div>
+        <div class="text-center text-4xl max-w-lg font-bold">Slopemapper</div>
+      </div>
+
+      <div class="flex flex-row items-center justify-between">
+        <p class="text-md">2024 Slopemapper All Rights Reserved</p>
+        <div class="flex flex-row space-x-10">
+          <a href="/legal/terms.html">Terms & Conditions</a>
+          <a href="/legal/privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 </body>
 </html>

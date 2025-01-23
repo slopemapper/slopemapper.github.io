@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "77XM7LDS87.com.a2ski.slopemapper.dev",
+          "77XM7LDS87.com.a2ski.a2ski"
+        ],
+        "paths": [
+          "/search",
+          "/search/*"
+        ],
+        "components": [
+          {
+            "/": "/search*"
+          }
+        ]
+      }
+    ]
+  }
+}

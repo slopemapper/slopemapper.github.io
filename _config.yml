@@ -1,7 +1,12 @@
 include: [".well-known"]
-# In _config.yml
 defaults:
   - scope:
       path: ".well-known"
     values:
       layout: null
+  - scope:
+      path: ".well-known/apple-app-site-association"
+    values:
+      layout: null
+      content_type: "application/json"
+permalink: 404.html
