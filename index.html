@@ -10,108 +10,354 @@
   <link href="./css/index.css" rel="stylesheet" />
   <title>Slopemapper</title>
 </head>
-<body class="max-h-screen font-opensans">
+
+<body class="min-h-screen text-white bg-black bg-gradient-to-b flex flex-col">
 <!-- Global container-->
-
-<!--Hero-->
-<section id="hero" class="bg-gradient-to-b from-blue-900 p-20">
-  <div
-    class="
-    container mx-auto justify-center flex
-    flex-col sm:space-y-32
-    items-center ">
-
-    <div class="flex flex-col mx-auto items-center text-white space-y-8">
-      <div class="h-32 w-32 bg-no-repeat">
-        <img src="images/logo.png" alt="Slopemapper Logo">
-      </div>
-      <h3 class="text-8xl font-bold">Slopemapper</h3>
-      <p class="max-w-lg text-3xl">Find piste routes in Les 3 Vallees</p>
-    </div>
-
-    <div class="flex flex-col items-center">
-      <img class="md:h-[50rem] md:min-w-[25rem] h-[30rem]" src="/images/top_example.png" alt="">
-      <img src="/images/download.svg" alt="Download" class=" h-48 w-48">
-    </div>
+<div class="flex flex-col min-h-screen text-white overflow-hidden">
+  <div class="absolute inset-0">
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_center_-10%,rgba(120,119,198,0.5)_0%,rgba(120,119,198,0.2)_45%,rgba(255,255,255,0)_70%)]"></div>
   </div>
-</section>
+  <header
+    class="sticky top-0 px-4 lg:px-6 h-14 flex items-center border-b border-white/10 z-50 backdrop-blur-sm bg-black/30">
+    <span class="ml-2 text-2xl font-medium flex items-center">Slopemapper</span>
+    <nav class="ml-auto flex flex-row space-x-4 gap-6">
+      <a class="text-md text-gray-400 hover:text-white" href="/legal/privacy.html">
+        Privacy Policy</a>
+      <a class="text-md text-gray-400 hover:text-white" href="/legal/terms.html">
+        Terms & Conditions</a>
+    </nav>
+  </header>
 
+  <main class="flex-1 relative z-10 ">
+    <section class="w-full py-24 md:py-32 lg:py-40 flex items-center justify-center">
+      <div class="container px-4 md:px-6 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-24">
+        <div class="flex flex-col space-y-4 lg:w-1/2 items-center lg:items-start text-center lg:text-left">
+          <h1 class="text-4xl font-bold tracking-tight sm:text-6xl xl:text-7xl/none">
+            Plan your perfect
+            <br />
+            ski day
+          </h1>
+          <p class="text-lg text-gray-400 md:text-xl max-w-[600px]">
+            Easily find routes and enjoy your day on the pistes with Slopemapper.
+          </p>
+          <div class="flex items-center gap-4 pt-4">
+            <img src="./images/download_white.svg" alt="Apple App Store" class="h-16" />
 
-<section id="someOtherLogo" class="bg-white">
-  <div class="container max-w-6xl mx-auto px-20">
-    <div class="flex-col flex space-y-20 items-center">
-      <h3 class="text-5xl font-bold text-darkBlue">Why Slopemapper?</h3>
+            <div
+              class="h-16 flex items-center justify-center px-4 py-2 rounded-xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent">
+              <div class="flex items-center gap-2">
+                <span class="text-md font-bold">Android App Coming Soon</span>
+              </div>
+            </div>
 
-      <div class="flex flex-row text-darkBlue justify-between space-x-32">
-        <div class="flex flex-col space-y-16">
-          <div class="flex-col space-y-6">
-            <h3 class="text-3xl font-bold">Easy navigation</h3>
-            <h3 class="text-2xl">Effortlessly navigate between lifts and pistes, without confusing resort maps and route
-              planning.</h3>
           </div>
-          <div class="flex-co space-y-6">
-            <h3 class="text-3xl font-bold">Simple design</h3>
-            <h3 class="text-2xl">User-friendly, with clear piste-by-piste instructions.</h3>
-          </div>
-        </div>
-        <div class="flex flex-col space-y-16">
-          <div class="flex-col space-y-6">
-            <h3 class="text-3xl font-bold">Tailored Routes</h3>
-            <h3 class="text-2xl">Select piste difficulty to suit your ability.</h3>
-          </div>
-          <div class="flex-col space-y-6">
-            <h3 class="text-3xl font-bold">Save time</h3>
-            <h3 class="text-2xl">Spend less time planning routes on piste maps and more time skiing!</h3>
+          <div class="flex items-center gap-4 pt-4">
           </div>
         </div>
+<!--        <div class="lg:w-1/2">-->
+          <div class="max-w-[400px] mx-auto">
+            <img
+              src="./images/main.png"
+              alt="Slopemapper App Interface"
+            />
+          </div>
+<!--        </div>-->
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<section id="appexamples" class="bg-white py-20">
-  <div class="container max-w-6xl mx-auto px-20 pt-10">
-
-    <div class="flex md:flex-row md:space-x-32 space-x-10 justify-center">
-      <div>
-        <img class="md:h-[24rem] md:min-w-[12rem] md:translate-y-10 translate-y-10" src="/images/example1.png" alt="">
-      </div>
-      <div>
-        <img class="md:h-[36rem] md:min-w-[18rem] md:-translate-y-10" src="/images/example2large.png" alt="">
-      </div>
-      <div>
-        <img class="md:h-[24rem] md:min-w-[12rem] md:translate-y-10 translate-y-10" src="/images/example3.png" alt="">
-      </div>
-    </div>
-  </div>
-
-</section>
-
-
-<section id="footer" class="bg-white p-20">
-  <div class="container max-w-5xl mx-auto">
-
-    <div class="flex flex-col space-y-8 text-darkBlue">
-      <p class="text-xl">Reach out to us at <b>slopemapperapp@gmail.com</b></p>
-
-      <div class="flex flex-row space-x-6 items-center">
-        <div class="h-20 w-20 bg-no-repeat">
-          <img src="images/logo.png" alt="Slopemapper Logo">
+    <section id="features" class="w-full py-32 md:py-32 flex items-center justify-center mt-16 md:mt-0">
+      <div class="container px-4 md:px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold sm:text-5xl mb-4">Powerful Features</h2>
+          <p class="text-gray-400 text-lg mx-auto">
+            Everything you need to navigate the pistes.
+          </p>
         </div>
-        <div class="text-center text-4xl max-w-lg font-bold">Slopemapper</div>
-      </div>
 
-      <div class="flex flex-row items-center justify-between">
-        <p class="text-xl">© 2025 Slopemapper - All Rights Reserved</p>
-        <div class="flex flex-row space-x-10">
-          <a href="/legal/terms.html" class="text-xl font-bold">Terms & Conditions</a>
-          <a href="/legal/privacy.html" class="text-xl font-bold">Privacy Policy</a>
+        <div class="grid gap-8 lg:grid-cols-2 lg:gap-12">
+          <!-- Feature 1 -->
+          <div
+            class="group relative rounded-[32px] border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-6 transition-all duration-300 hover:border-purple-500/30 hover:scale-[1.02]">
+            <div
+              class="absolute inset-0 rounded-[32px] bg-gradient-to-b from-purple-500/0 to-purple-500/0 opacity-0 transition-opacity duration-300 group-hover:opacity-5"></div>
+            <div class="relative z-10">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/10">
+                  <svg class="h-6 w-6 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                </div>
+                <h2 class="text-2xl font-bold">Resort map</h2>
+              </div>
+              <p class="text-gray-400 mb-8">
+                View the resort map in app*
+              </p>
+              <div class="overflow-hidden">
+                <img
+                  src="./images/resortPage.png"
+                  alt="Ski tracking interface"
+                  class="w-full md:w-3/4 mx-auto aspect-square object-cover object-bottom relative z-10"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="group relative rounded-[32px] border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-6 transition-all duration-300 hover:border-purple-500/30 hover:scale-[1.02]">
+            <div
+              class="absolute inset-0 rounded-[32px] bg-gradient-to-b from-purple-500/0 to-purple-500/0 opacity-0 transition-opacity duration-300 group-hover:opacity-5"></div>
+            <div class="relative z-10">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/10">
+                  <svg class="h-6 w-6 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  </svg>
+                </div>
+                <h2 class="text-2xl font-bold">Search for Pistes and Lifts</h2>
+              </div>
+              <p class="text-gray-400 mb-8">
+                Search for pistes and lifts offline. Never be caught without a plan on the mountain.
+              </p>
+              <div class="overflow-hidden">
+                <img
+                  src="./images/search.png"
+                  alt="Search for pistes and lifts"
+                  class="w-full md:w-3/4 mx-auto aspect-square object-cover object-top relative z-10"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="group relative rounded-[32px] border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-8 transition-all duration-300 hover:border-purple-500/30 hover:scale-[1.02]">
+            <div
+              class="absolute inset-0 rounded-[32px] bg-gradient-to-b from-purple-500/0 to-purple-500/0 opacity-0 transition-opacity duration-300 group-hover:opacity-5"></div>
+            <div class="relative z-10">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/10">
+                  <svg class="h-6 w-6 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h2 class="text-2xl font-bold">Share with friends</h2>
+              </div>
+              <p class="text-gray-400 mb-8">
+                Share planned route with friends by sending them a link or a message with the route.
+              </p>
+              <div class="overflow-hidden">
+                <img
+                  src="./images/share.png"
+                  alt="Statistics interface"
+                  class="w-full md:w-3/4 mx-auto aspect-square object-cover object-top relative z-10"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div
+            class="group relative rounded-[32px] border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-6 transition-all duration-300 hover:border-purple-500/30 hover:scale-[1.02]">
+            <div
+              class="absolute inset-0 rounded-[32px] bg-gradient-to-b from-purple-500/0 to-purple-500/0 opacity-0 transition-opacity duration-300 group-hover:opacity-5"></div>
+            <div class="relative z-10">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="flex h-10 w-10 items-center justify-center rounded-full bg-purple-500/10">
+                  <svg class="h-5 w-5 text-purple-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h2 class="text-xl font-bold">Adjust your ski level</h2>
+              </div>
+              <p class="text-gray-400 mb-6">
+                Adjust the ski level you are comfortable to ski at.
+              </p>
+              <div class="overflow-hidden">
+                <img
+                  src="./images/level.png"
+                  alt="Statistics interface"
+                  class="w-full md:w-3/4 mx-auto aspect-square object-cover relative z-10"
+                />
+              </div>
+            </div>
+          </div>
+
         </div>
-    </div>
+      </div>
+    </section>
 
-  </div>
-</section>
+    <section class="w-full py-24 md:py-32 flex items-center justify-center bg-black/30">
+      <div class="container px-4 md:px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl mb-4">Everything you need</h2>
+          <p class="text-gray-400 text-lg max-w-[600px] mx-auto">
+            Discover all the features that make Slopemapper your perfect companion on the ski pistes.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="group p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-purple-500/30 transition-all">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/10 mb-6">
+              <svg class="h-6 w-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Offline Maps</h3>
+            <p class="text-gray-400">Access the maps even without internet connection. Never lose your way on the
+              mountain.</p>
+          </div>
+          <!-- Feature 2 -->
+          <div
+            class="group p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-purple-500/30 transition-all">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/10 mb-6">
+              <svg class="h-6 w-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 flex items-center gap-3">
+              Offline Piste and Lift Routing
+            </h3>
+            <p class="text-gray-400">Search for pistes and lifts offline. Never be caught without a plan on the
+              mountain.</p>
+          </div>
+          <!-- Feature 4 -->
+          <div
+            class="group p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-purple-500/30 transition-all">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/10 mb-6">
+              <svg class="h-6 w-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 flex items-center gap-3">
+              Track Your Progress
+              <span
+                class="text-sm font-medium text-purple-400 bg-purple-500/20 px-3 py-1 rounded-full border border-purple-500/30">Coming Soon</span>
+            </h3>
+            <p class="text-gray-400">Monitor your speed, distance, and elevation changes in real-time with precise GPS
+              tracking.</p>
+          </div>
+          <!-- Feature 5 -->
+          <div
+            class="group p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-purple-500/30 transition-all">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/10 mb-6">
+              <svg class="h-6 w-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 flex items-center gap-3">
+              Live lift status
+              <span
+                class="text-sm font-medium text-purple-400 bg-purple-500/20 px-3 py-1 rounded-full border border-purple-500/30">Coming Soon</span>
+            </h3>
+            <p class="text-gray-400">Get real-time updates on lift status.</p>
+          </div>
+          <!-- Feature 6-->
+          <div
+            class="group p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-purple-500/30 transition-all">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/10 mb-6">
+              <svg class="h-6 w-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 flex items-center gap-3">
+              Live Conditions
+              <span
+                class="text-sm font-medium text-purple-400 bg-purple-500/20 px-3 py-1 rounded-full border border-purple-500/30">Coming Soon</span>
+            </h3>
+            <p class="text-gray-400">Get real-time updates on weather conditions and snow reports</p>
+          </div>
+          <div
+            class="group p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-purple-500/30 transition-all">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/10 mb-6">
+              <svg class="h-6 w-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 flex items-center gap-3">
+              Navigate to restaurants
+              <span
+                class="text-sm font-medium text-purple-400 bg-purple-500/20 px-3 py-1 rounded-full border border-purple-500/30">Coming Soon</span>
+            </h3>
+            <p class="text-gray-400">Navigate to restaurants and bars on the mountain</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-10 md:py-10 flex items-center justify-center bg-black/30">
+      <div class="container px-4 md:px-6">
+        <div class="flex flex-col items-center justify-center text-center mb-16">
+          <div
+            class="relative w-full max-w-sm p-8 rounded-[32px] border border-white/10 bg-gradient-to-b from-white/5 to-transparent overflow-hidden mx-auto">
+            <div class="absolute inset-0 bg-green-500/10 blur-[100px]"></div>
+            <div class="relative z-10">
+              <div
+                class="inline-flex items-center justify-center p-3 mb-6 rounded-full bg-green-500/10 ring-1 ring-green-500/20">
+                <svg class="w-6 h-6 text-green-400" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M17.657 14.828l-1.414-1.414L17.657 12A4 4 0 0012 6.343l-1.414 1.414-1.414-1.414L10.586 5A6 6 0 0119 13.414l-1.343 1.414zM6.343 12A4 4 0 0012 17.657l1.414-1.414 1.414 1.414-1.414 1.414A6 6 0 014.929 10.586L6.343 12z"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold mb-3">Android App Coming Soon</h3>
+              <p class="text-gray-400 mb-6">Experience Slopemapper on your Android device soon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="w-full py-24 md:py-32 flex flex-col items-center justify-center">
+      <div class="container px-4 md:px-6 text-center">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">Ready to Hit the Pistes?</h2>
+        <p class="max-w-[600px] mx-auto text-gray-400 text-lg mb-8">
+          Download Slopemapper now and transform your skiing experience.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <div class="flex items-center gap-4 pt-4">
+            <img src="./images/download_white.svg" alt="Apple App Store" class="h-16" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resort_content" class="w-full py-20 md:py-24 flex flex-col items-center justify-center">
+      <div
+        class="group p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-purple-200/30 transition-all max-w-[600px] mx-auto">
+        <h3 class="text-xl font-bold mb-2">*Resort map</h3>
+        <p class="text-gray-400 mb-2 font-bold">We do not claim ownership of any of the maps, logos, or any other
+          copyrighted information displayed within Slopemapper.</p>
+        <p class="text-gray-400 mb-2">All resort maps and logos are the property of their respective owners.</p>
+        <p class="text-gray-400 mb-2">These are given free of charge. We reserve the right to remove any of this data if
+          requested by the copyright holder at any time without notice to users. Any downloaded maps on-device may be
+          removed as a result.</p>
+        <p class="text-gray-400 mb-2">The resort information in-app is considered informational only and is provided
+          without warranty or guarantee. You are expected to validate any information in-app before relying on it.</p>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="px-4 lg:px-6 h-14 flex items-center border-b border-white/10 relative z-1">
+    <div class="w-full flex flex-col md:flex-row items-center gap-4">
+      <p class="text-sm text-gray-400">© 2025 CodeBloom LTD. All rights reserved.</p>
+      <nav class="ml-auto flex flex-row space-x-4 gap-6">
+        <a class="text-sm text-gray-400 hover:text-white" href="/legal/privacy.html">Privacy Policy</a>
+        <a class="text-sm text-gray-400 hover:text-white" href="/legal/terms.html">Terms & Conditions</a>
+      </nav>
+    </div>
+  </footer>
+</div>
 
 </body>
 </html>
