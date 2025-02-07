@@ -2,6 +2,22 @@
 <!--<html lang="en" class="dark">-->
 <head>
   <meta charset="UTF-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/small_logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/small_logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/small_logo.png">
+
+  <!-- Open Graph meta tags for link previews -->
+  <meta property="og:title" content="Slopemapper - Plan your perfect ski day">
+  <meta property="og:description" content="Slopemapper is a ski route planner that helps you find the perfect route for your ski day.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://slopemapper.github.io">
+  <!-- Single, clear image directive -->
+  <meta property="og:image" content="https://slopemapper.github.io/images/transparent.png">
+  <meta property="og:image:width" content="1">
+  <meta property="og:image:height" content="1">
+  <!-- Twitter card setting -->
+  <meta name="twitter:card" content="summary">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -12,22 +28,24 @@
 </head>
 
 <body class="min-h-screen text-white bg-black bg-gradient-to-b flex flex-col">
+
+<!-- Navbar -->
+<header class="sticky top-0 px-4 lg:px-6 h-14 flex items-center border-b border-white/10 z-50 backdrop-blur-sm bg-black/30">
+  <span class="ml-2 text-2xl font-medium flex items-center">Slopemapper</span>
+  <nav class="ml-auto flex flex-row space-x-4 gap-6">
+    <a class="text-md text-gray-400 hover:text-white" href="/legal/privacy.html">
+      Privacy Policy</a>
+    <a class="text-md text-gray-400 hover:text-white" href="/legal/terms.html">
+      Terms & Conditions</a>
+  </nav>
+</header>
+
 <!-- Global container-->
 <div class="flex flex-col min-h-screen text-white overflow-hidden">
   <div class="absolute inset-0">
     <div
       class="absolute inset-0 bg-[radial-gradient(circle_at_center_-10%,rgba(120,119,198,0.5)_0%,rgba(120,119,198,0.2)_45%,rgba(255,255,255,0)_70%)]"></div>
   </div>
-  <header
-    class="sticky top-0 px-4 lg:px-6 h-14 flex items-center border-b border-white/10 z-50 backdrop-blur-sm bg-black/30">
-    <span class="ml-2 text-2xl font-medium flex items-center">Slopemapper</span>
-    <nav class="ml-auto flex flex-row space-x-4 gap-6">
-      <a class="text-md text-gray-400 hover:text-white" href="/legal/privacy.html">
-        Privacy Policy</a>
-      <a class="text-md text-gray-400 hover:text-white" href="/legal/terms.html">
-        Terms & Conditions</a>
-    </nav>
-  </header>
 
   <main class="flex-1 relative z-10 ">
     <section class="w-full py-24 md:py-32 lg:py-40 flex items-center justify-center">
@@ -55,14 +73,14 @@
           <div class="flex items-center gap-4 pt-4">
           </div>
         </div>
-<!--        <div class="lg:w-1/2">-->
-          <div class="max-w-[400px] mx-auto">
-            <img
-              src="./images/main.png"
-              alt="Slopemapper App Interface"
-            />
-          </div>
-<!--        </div>-->
+        <!--        <div class="lg:w-1/2">-->
+        <div class="max-w-[400px] mx-auto">
+          <img
+            src="./images/routeResult.png"
+            alt="Slopemapper App Interface"
+          />
+        </div>
+        <!--        </div>-->
       </div>
     </section>
 
@@ -152,7 +170,7 @@
               </p>
               <div class="overflow-hidden">
                 <img
-                  src="./images/share.png"
+                  src="./images/shareScreen.png"
                   alt="Statistics interface"
                   class="w-full md:w-3/4 mx-auto aspect-square object-cover object-top relative z-10"
                 />
@@ -331,7 +349,7 @@
       </div>
     </section>
 
-    <section id="resort_content" class="w-full py-20 md:py-24 flex flex-col items-center justify-center">
+    <section id="resort_content" class="w-full py-10 md:py-14 flex flex-col items-center justify-center">
       <div
         class="group p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-purple-200/30 transition-all max-w-[600px] mx-auto">
         <h3 class="text-xl font-bold mb-2">*Resort map</h3>
@@ -345,13 +363,34 @@
           without warranty or guarantee. You are expected to validate any information in-app before relying on it.</p>
       </div>
     </section>
+
+    <section id="resort_testt" class="w-full py-10 flex flex-col items-center justify-center">
+      <!-- Beta Testing Info -->
+      <div class="text-center">
+        <div
+          class="group p-6 rounded-2xl border border-white/10 bg-white/5 hover:border-purple-200/30 transition-all max-w-[600px] mx-auto">
+          <p class="text-sm md:text-base text-blue-400 leading-relaxed">
+            Currently in its early testing phase, Slopemapper is focused on providing a basic version of
+            what's to come – and we would love your feedback to help shape its future!
+          </p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
 
-  <footer class="px-4 lg:px-6 h-14 flex items-center border-b border-white/10 relative z-1">
-    <div class="w-full flex flex-col md:flex-row items-center gap-4">
-      <p class="text-sm text-gray-400">© 2025 CodeBloom LTD. All rights reserved.</p>
-      <nav class="ml-auto flex flex-row space-x-4 gap-6">
+  <footer class="mt-auto text-zinc-400 py-6 px-4 border-t border-white/10 flex items-center" >
+    <div class="max-w-4xl mx-auto w-full flex justify-between items-center">
+      <div class="flex flex-col">
+        <div class="flex items-center gap-2" onclick="window.location.href='https://codebloom.co.uk/';" style="cursor: pointer;">
+          <img src="images/cb_logo.png" alt="CodeBloom Logo" class="h-6 w-6">
+          <div class="text-md md:text-base font-medium">CodeBloom</div>
+        </div>
+        <div class="text-xs md:text-sm">© 2025 CodeBloom. All rights reserved.</div>
+      </div>
+
+      <nav class="flex flex-row space-x-4 gap-6">
         <a class="text-sm text-gray-400 hover:text-white" href="/legal/privacy.html">Privacy Policy</a>
         <a class="text-sm text-gray-400 hover:text-white" href="/legal/terms.html">Terms & Conditions</a>
       </nav>

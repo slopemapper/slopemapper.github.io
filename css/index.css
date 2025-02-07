@@ -620,6 +620,10 @@ video {
   z-index: 50;
 }
 
+.z-20 {
+  z-index: 20;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -667,6 +671,14 @@ video {
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -777,6 +789,18 @@ video {
   max-width: 24rem;
 }
 
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[00px\] {
+  max-width: 00px;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -839,6 +863,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-24 {
+  gap: 6rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -905,6 +933,14 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-blue-500\/20 {
+  border-color: rgb(59 130 246 / 0.2);
+}
+
 .border-purple-500\/30 {
   border-color: rgb(168 85 247 / 0.3);
 }
@@ -920,6 +956,10 @@ video {
 
 .bg-black\/30 {
   background-color: rgb(0 0 0 / 0.3);
+}
+
+.bg-blue-500\/10 {
+  background-color: rgb(59 130 246 / 0.1);
 }
 
 .bg-green-500\/10 {
@@ -1020,6 +1060,10 @@ video {
   padding: 2rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1068,6 +1112,11 @@ video {
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pt-10 {
@@ -1126,6 +1175,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1148,6 +1202,11 @@ video {
 
 .tracking-tighter {
   letter-spacing: -0.05em;
+}
+
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 .text-blue-600 {
@@ -1178,6 +1237,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-zinc-400 {
+  --tw-text-opacity: 1;
+  color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1325,9 +1389,24 @@ video {
     padding-bottom: 8rem;
   }
 
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1358,14 +1437,6 @@ video {
 
   .lg\:gap-24 {
     gap: 6rem;
-  }
-
-  .lg\:gap-20 {
-    gap: 5rem;
-  }
-
-  .lg\:gap-10 {
-    gap: 2.5rem;
   }
 
   .lg\:px-6 {
